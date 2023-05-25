@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;1,300&family=Poppins:wght@400;500;600;700&display=swap');
+
+
+*{margin: 0;
+padding:0;
+box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: "jost",sans-serif;
+    display: grid;
+    place-items: center;
+}
+.container{
+    margin-top: 5rem;
+    width: 30rem;
+    height: 40rem;
+    background-color: rgb(241, 216, 216);
+    border-radius: 2rem;
+    box-shadow: 0 1.2 3rem 0.5rem rgba(0,0,0,0.2);
+    padding: 3rem;
+    text-align: center;
+}
+#title {   
+text-transform: uppercase;
+letter-spacing: 0.2rem;
+color: #171717;
+margin: 2rem 0 0.5rem 0;
+font-size: 2.5rem;
+font-weight: 500;
+text-shadow: 0 0.3 0.5rem rgba(0,0,0,0.3); 
+}
+.scroll_container{
+
+width: 25rem;
+height: 25rem;
+margin: auto;
+}
+img{
+    border-radius: 50%;
+}
+.fa-solid{
+    font-size: 2rem;
+    color: #111111;
+    cursor: pointer;
+}
+.music_controls{
+width: 20rem;
+display: flex;
+justify-content: space-between;
+margin: auto;
+margin-top: 2rem;
+align-items: center;
+}
+.main_button{
+width: 5rem;
+height: 5rem;
+border-radius: 50%;
+background-color: #111;
+color: #f6f6f6;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 1.4rem;
+
+}
+.fa-backward:hover{
+color: gray;
+}
+.fa-forward:hover{
+    color: gray;
+    }
+ .fa-play:hover{
+background-color: #f6f6f6;
+color: black;
+box-shadow: 0 1rem 2rem 0.2rem rgba(0,0,0,0.4);
+ }   
+
+ .ghoomar_re{
+    animation: rotateplayer 6s linear infinite;
+ }
+ @keyframes rotateplayer{
+    from{ transform: rotate(0deg);}
+    to{
+        transform: rotate(360deg);
+    }
+ }
